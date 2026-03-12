@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-primary: #000000;
+  --color-brand-secondary: #ffffff;
+  
+  --color-accent-light: #f0f4ff;
+  --color-accent-dark: #1a1a2e;
+  --color-accent-glow: #6366f1;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-black antialiased transition-colors duration-500;
+  }
+  
+  .dark body {
+    @apply bg-[#050505] text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-tight;
+  }
+}
+
+@layer components {
+  .bw-border {
+    @apply border border-black/10 dark:border-white/10;
+  }
+  
+  .bw-button-primary {
+    @apply bg-black text-white dark:bg-white dark:text-black px-6 py-3 font-bold uppercase tracking-widest hover:bg-indigo-600 dark:hover:bg-indigo-400 hover:text-white dark:hover:text-black transition-all active:scale-95;
+  }
+  
+  .bw-button-secondary {
+    @apply bg-transparent text-black dark:text-white border border-black dark:border-white px-6 py-3 font-bold uppercase tracking-widest hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all active:scale-95;
+  }
+
+  .theme-gradient-light {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+  }
+
+  .theme-gradient-dark {
+    background: linear-gradient(135deg, #050505 0%, #0a0a1a 100%);
+  }
+
+  .text-impact-static {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.1em;
+    color: inherit;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .text-impact-static::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.1em;
+    width: 100%;
+    height: 0.3em;
+    background: currentColor;
+    opacity: 0.2;
+    z-index: -1;
+    transition: height 0.3s ease;
+  }
+
+  .text-impact-static:hover::after {
+    height: 0.8em;
+    opacity: 0.1;
+  }
+
+  .text-outline-impact {
+    -webkit-text-stroke: 1px currentColor;
+    color: currentColor;
+    opacity: 0.3;
+    transition: all 0.5s ease;
+  }
+
+  .text-outline-impact:hover {
+    opacity: 1;
+    -webkit-text-stroke: 0px transparent;
+  }
+}
