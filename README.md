@@ -1,15 +1,4 @@
 
-# ECell's official Website
+# Hi! Welcome to ECell!
 
 The Entrepreneurship Cell (E-Cell) is a student-driven initiative dedicated to fostering innovation, creativity, and an entrepreneurial mindset among students. It serves as a platform where aspiring entrepreneurs can transform their ideas into impactful ventures through mentorship, networking, and hands-on learning experiences.
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
