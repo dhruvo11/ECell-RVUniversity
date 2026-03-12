@@ -1,12 +1,10 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="GHBanner" src="https://www.instagram.com/ecell_rvu/" />
 </div>
 
-# Run and deploy your AI Studio app
+# ECell's official Website
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/0eab0628-ef2b-42e5-915a-aea819878f22
+The Entrepreneurship Cell (E-Cell) is a student-driven initiative dedicated to fostering innovation, creativity, and an entrepreneurial mindset among students. It serves as a platform where aspiring entrepreneurs can transform their ideas into impactful ventures through mentorship, networking, and hands-on learning experiences.
 
 ## Run Locally
 
