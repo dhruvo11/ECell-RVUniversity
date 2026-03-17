@@ -21,12 +21,12 @@ const team = [
   {
     id: 2,
     name: 'Priya Patel',
-    role: 'Head of Operations',
-    department: 'Operations',
+    role: 'Head of PR',
+    department: 'Public Relations',
     year: 'Third Year',
     image: 'https://picsum.photos/seed/priya/500/500',
-    bio: 'Ensures smooth execution of events, internal processes, and coordination between teams.',
-    skills: ['Operations', 'Planning', 'Coordination'],
+    bio: 'Handles outreach, partnerships, and communication for E-Cell initiatives and events.',
+    skills: ['Communication', 'Outreach', 'Coordination'],
     socials: {
       linkedin: '#',
       twitter: '#',
@@ -37,7 +37,7 @@ const team = [
     id: 3,
     name: 'Rohan Gupta',
     role: 'Tech Lead',
-    department: 'Technology',
+    department: 'Technical Team',
     year: 'Final Year',
     image: 'https://picsum.photos/seed/rohan/500/500',
     bio: 'Builds and manages the technical backbone for E-Cell platforms, events, and digital systems.',
@@ -51,12 +51,12 @@ const team = [
   {
     id: 4,
     name: 'Ananya Iyer',
-    role: 'Marketing Head',
-    department: 'Marketing',
+    role: 'Documentation Lead',
+    department: 'Documentation Team',
     year: 'Third Year',
     image: 'https://picsum.photos/seed/ananya/500/500',
-    bio: 'Drives branding, outreach, social media campaigns, and audience engagement for E-Cell.',
-    skills: ['Branding', 'Content', 'Campaigns'],
+    bio: 'Manages reports, records, event documentation, and written communication for the team.',
+    skills: ['Writing', 'Reporting', 'Content'],
     socials: {
       linkedin: '#',
       twitter: '#',
@@ -66,12 +66,12 @@ const team = [
   {
     id: 5,
     name: 'Karan Mehta',
-    role: 'Event Coordinator',
-    department: 'Operations',
+    role: 'PR Coordinator',
+    department: 'Public Relations',
     year: 'Second Year',
     image: 'https://picsum.photos/seed/karan/500/500',
-    bio: 'Supports event execution, logistics, registrations, and on-ground coordination.',
-    skills: ['Event Ops', 'Logistics', 'Teamwork'],
+    bio: 'Supports outreach, collaborations, registrations, and external communication activities.',
+    skills: ['Event Ops', 'Networking', 'Teamwork'],
     socials: {
       linkedin: '#',
       twitter: '#',
@@ -81,16 +81,31 @@ const team = [
   {
     id: 6,
     name: 'Sneha Reddy',
-    role: 'Design Lead',
-    department: 'Creative',
+    role: 'Social Media Lead',
+    department: 'Social Media Team',
     year: 'Third Year',
     image: 'https://picsum.photos/seed/sneha/500/500',
-    bio: 'Creates visual identity, promotional creatives, and design assets for campaigns and events.',
-    skills: ['Design', 'Brand Identity', 'Creatives'],
+    bio: 'Creates campaigns, manages audience engagement, and runs social media presence for E-Cell.',
+    skills: ['Content', 'Branding', 'Campaigns'],
     socials: {
       linkedin: '#',
       twitter: '#',
       mail: 'mailto:sneha@example.com',
+    },
+  },
+  {
+    id: 7,
+    name: 'Aarav Nair',
+    role: 'Design Lead',
+    department: 'Design Team',
+    year: 'Second Year',
+    image: 'https://picsum.photos/seed/aarav/500/500',
+    bio: 'Designs posters, promotional materials, and brand assets for events and campaigns.',
+    skills: ['UI Design', 'Posters', 'Brand Identity'],
+    socials: {
+      linkedin: '#',
+      twitter: '#',
+      mail: 'mailto:aarav@example.com',
     },
   },
 ];
@@ -210,13 +225,22 @@ export default function Team() {
                   </button>
 
                   <div className="flex items-center gap-3">
-                    <a href={member.socials.linkedin} className="opacity-60 hover:opacity-100 transition-opacity">
+                    <a
+                      href={member.socials.linkedin}
+                      className="opacity-60 hover:opacity-100 transition-opacity"
+                    >
                       <Linkedin className="w-4 h-4" />
                     </a>
-                    <a href={member.socials.twitter} className="opacity-60 hover:opacity-100 transition-opacity">
+                    <a
+                      href={member.socials.twitter}
+                      className="opacity-60 hover:opacity-100 transition-opacity"
+                    >
                       <Twitter className="w-4 h-4" />
                     </a>
-                    <a href={member.socials.mail} className="opacity-60 hover:opacity-100 transition-opacity">
+                    <a
+                      href={member.socials.mail}
+                      className="opacity-60 hover:opacity-100 transition-opacity"
+                    >
                       <Mail className="w-4 h-4" />
                     </a>
                   </div>
